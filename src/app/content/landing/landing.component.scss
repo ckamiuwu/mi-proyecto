@@ -1,0 +1,17 @@
+.container {
+  background-image: url('../../../img/Gradient.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.title{
+    color: white;
+    font-weight: 600;
+}
+
+.margin-welcome{
+    padding-top: 40%;
+}

@@ -1,1 +1,160 @@
-<p>home works!</p>
+<div class="content-wrapper">
+<!-- Navbar -->
+  <nav class="navbar position-absolute px-4 w-100 z-index-2">
+    <div class="container-fluid">
+      <div class="Home">
+            <a href="/home" class="nav-title">Portafolio</a>
+      </div>
+        <div class="hamburger" (click)="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+        </div>
+  <!-- Menú Desplegable -->
+        <div class="menu-overlay" [class.active]="menuOpen">
+          <div class="menu-header">
+            <div class="offcanvas-header">
+             <a href="/home" class="nav-header">Portafolio</a>
+             <button type="button" class="btn btn-close" (click)="toggleMenu()"></button>
+            </div>
+             <div class="ms-auto">
+              <ul class="navbar-nav">
+                <li><a class="nav-link" href="/branding">Branding</a></li>
+                <li><a href="#">Social Media</a></li>
+                <li><a href="#">Diseño UI</a></li>
+                <li><a href="#">Logofolio</a></li>
+              </ul>
+             </div>
+          </div>
+        </div>
+    </div>
+  </nav>
+
+<!-- End Navbar -->
+
+
+<!-- Gradient -->
+<div class="container-fluid">
+  <div class="gradient mt-4" style="background-image: url('/assets/img/Gradient.jpg'); "></div>
+</div>
+
+<!-- Profile -->
+  <div class="card-profile shadow-sm blur p-3 mb-4 mx-4 overflow-hidden" style="margin-top: -6rem;">
+      <div class="row gx-4">
+          <div class="col-auto">
+              <div class="profile-placeholder mb-3">
+                <img src="assets/img/profile_image.jpeg" alt="profile_image" class="w-100 h-100 object-fit-cover rounded border-radius-lg shadow-sm">
+              </div>
+          </div>
+          <div class="col-auto my-auto">
+            <div class="h-100">
+              <h5 class="fw-bold mb-1">Camila Monje</h5>
+              <p><small class="mb-3">Diseñadora UI</small></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
+            <div>
+                <ul class="nav nav-fill flex-column">
+                  <li class="nav-item">
+                    <img src="assets/img/Email.svg" alt="Email" class="me-2">
+                    <span class="ms-1">Cami.panchillogmail.com</span>
+                  </li>
+                  <li class="nav-item">
+                    <img src="assets/img/Insta.svg" alt="Instagram" class="me-2">
+                    <span class="ms-1">Ckami_uwu</span>
+                   </li>
+                  <li class="nav-item">
+                    <img src="assets/img/Linkedin.svg" alt="Linkedin" class="me-2">
+                    <span class="ms-1">Camila Monje Panchillo</span>
+                  </li>
+                </ul>
+             </div>
+          </div>
+      </div>
+  </div>
+
+ <!-- Breadcrumb -->
+  <div class="mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <nav aria-label="breadcrumb" class="ms-2">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Información -->
+  <div class="container-fluid py-4">
+    <div class="row">
+      <div class="col-12">
+        <div class="card shadow-sm p-3 mb-4">
+          <h4 class="fw-bold mb-3">Información del Perfil</h4>
+          <p class="mb-0">
+            Hola, soy una Diseñadora Gráfica, especializada en diseño web con
+            más de 3 años de experiencia en empresas tecnológicas, Especializada en diseño web,
+            branding y creación de contenido visual. Experta en Adobe Creative Suite (Photoshop,
+            Illustrator, InDesign) y Figma. Con un fuerte compromiso con el aprendizaje continuo
+            y el crecimiento profesional, me considero una persona responsable, minuciosa y
+            orientada a resultados, siempre buscando aportar valor y adaptarme
+            a las necesidades del entorno dinámico del diseño.
+          </p>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="card shadow-sm  p-3 mb-4">
+          <img src="assets/img/icon-mac.svg" alt="Experiencia Profesional" class="icon-mac">
+          <h4 class="fw-bold mb-3 mt-3">Experiencia Profesional</h4>
+          <p class="mb-1 fw-bold">Diseñadora Web</p>
+          <p class="mb-1">Ki Tecnologías, Comunicación y Tecnología.</p>
+           <small class="">Dic. 2020 - Ene. 2024</small>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="card shadow-sm blur p-3 mb-4">
+          <img src="assets/img/icon-school.svg" alt="Técnico en Diseño Gráfico" class="icon-school">
+          <h4 class="fw-bold mb-3 mt-3">Formación</h4>
+          <p class="mb-1 fw-bold">Técnico en Diseño Gráfico</p>
+          <p class="mb-1">Instituto Profesional INACAP</p>
+          <small class="">2018 - 2019</small>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="card shadow-sm  p-3 mb-4">
+          <img src="assets/img/icon-pen.svg" alt="Programas" class="icon-pen">
+          <h4 class="fw-bold mb-3 mt-3">Programas</h4>
+          <div class="program-icons d-flex">
+              <img src="assets/img/Logo Ps.svg" alt="Photoshop">
+              <img src="assets/img/Logo Ai.svg" alt="Illustrator">
+              <img src="assets/img/Logo Xd.svg" alt="InDesign">
+              <img src="assets/img/figma.svg" alt="Figma">
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="card shadow-sm  p-3 mb-4">
+          <img src="assets/img/icon-book.svg" alt="Certificaciones" class="icon-book">
+          <h4 class="fw-bold mb-3 mt-3">Certificaciones</h4>
+          <p class="mb-1 fw-bold">Domestika</p>
+          <p>Diseño de producto digital con Lean y UX.</p>
+          <p class="mb-1 fw-bold">Udemy</p>
+          <p>Scrum & Agile, Metodologías Ágiles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="footer-gradient mt-3 py-3 text-center text-white">
+  <p class="mb-3 fw-bold fs-5">Sígueme</p>
+  <div class="mb-2">
+    <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+    <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+  </div>
+  <hr class="footer-divider mt-4">
+  <small class="d-block text-white-50 fw-medium mt-2">Camila Monje</small>
+</footer>

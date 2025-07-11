@@ -1,18 +1,22 @@
-<div class="container"> 
-    <div class="row margin-welcome">
+<div class="container-fluid d-flex flex-column justify-content-between min-vh-100">
+
+    <div class="row flex-grow-1 align-items-end" >
         <div class="col text-center">
             <p class="title">Bienvenidos</p>
-
         </div>
     </div>
-    <div class="row">
-        <div class="col">
 
+    <div class="row flex-grow-1 align-items-center ">
+        <div class="col text-center">
+          <img src="assets/img/Portada.svg" alt="Portada" class="img-fluid" style="max-width: 80%;">
+          <p class="sub-title fw-light pt-4">Diseño Grafico & UI</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
 
+   <div class="row flex-grow-1 align-items-center ">
+        <div class="col d-flex justify-content-center">
+          <button class="btn button" (click)="irAHome()" >Comenzar</button>
         </div>
     </div>
-</div>
+
+ </div>

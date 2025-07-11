@@ -1,14 +1,8 @@
-body {
-    font-family: "Poppins", sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
-}
-header {
-    text-align: center;
-    background: #C4C5D9;
-    color: #101137;
-    padding: 20px;
-}
-section {
-    padding: 20px;
-}
+// Importar funciones primero
+@use "bootstrap/scss/functions";
+
+// Sobrescribir variables personalizadas
+$enable-negative-margins: true;
+
+// Finalmente importar todo Bootstrap
+@use "bootstrap/scss/bootstrap";
